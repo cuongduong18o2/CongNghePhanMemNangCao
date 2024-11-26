@@ -1,0 +1,75 @@
+/* Sidebar tổng thể */
+#sidebar {
+  position: fixed; /* Đảm bảo sidebar cố định */
+  top: 0; /* Đưa sidebar lên đầu màn hình */
+  left: 0; /* Gắn sidebar vào bên trái */
+  width: 250px; /* Độ rộng của sidebar */
+  height: 100vh; /* Chiều cao đầy đủ của viewport */
+  background-color: #f36e08; /* Màu nền của sidebar */
+  color: #ecf0f1; /* Màu chữ */
+  padding: 20px; /* Khoảng cách bên trong */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp khi mở/đóng */
+  z-index: 1000; /* Đặt z-index để sidebar luôn nổi bật */
+  overflow-y: auto; /* Thêm cuộn dọc nếu nội dung vượt quá chiều cao */
+}
+
+#sidebar.sidebar-responsive {
+  left: -250px; /* Ẩn sidebar khi không mở */
+}
+
+/* Sidebar title */
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.icon_header {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+/* Sidebar list */
+.sidebar-list {
+  list-style: none; /* Xóa dấu chấm */
+  padding: 0; /* Xóa khoảng cách bên trong */
+}
+
+.sidebar-list-item {
+  margin: 10px 0; /* Khoảng cách giữa các mục */
+}
+
+.sidebar-list-item a {
+  display: flex; /* Căn giữa các mục */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  text-decoration: none; /* Xóa gạch chân */
+  color: #ecf0f1; /* Màu chữ */
+  font-size: 1.2rem; /* Kích thước chữ */
+  padding: 10px; /* Khoảng cách bên trong cho từng mục */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển tiếp cho màu nền */
+  border-radius: 10px; /* Bo góc cho các mục */
+}
+
+.sidebar-list-item a:hover {
+  background-color: #867d74; /* Màu nền khi hover */
+}
+
+/* Sidebar khi màn hình nhỏ (responsive) */
+@media screen and (max-width: 768px) {
+  #sidebar {
+    left: -250px; /* Ẩn sidebar ngoài màn hình */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp cho việc mở/đóng */
+  }
+
+  #sidebar.sidebar-responsive {
+    left: 0; /* Hiện sidebar khi mở */
+  }
+}

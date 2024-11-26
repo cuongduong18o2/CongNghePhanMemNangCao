@@ -1,0 +1,85 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  border-radius: 12px;
+  height: 500px;
+  min-width: 20%;
+  background-color: rgb(218, 218, 218);
+}
+.login-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+form {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+input {
+  padding: 0.35rem;
+  font-family: "Inter", sans-serif;
+  margin: 0.75rem 0;
+  border-radius: 4px;
+  width: 100%;
+  height: 35px;
+  border-radius: 7px; /* Bo góc với bán kính 10px */
+  border: 1px solid #ccc; /* Đường viền màu xám */
+  padding: 10px; /* Khoảng cách bên trong */
+  outline: none; /* Ẩn viền ngoài khi được chọn */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển đổi cho viền */
+}
+input:focus {
+  border-color: #007bff; /* Đổi màu viền khi input được chọn */
+}
+button {
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.65rem;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(161, 161, 161);
+}
+button:hover {
+  background-color: rgb(50, 135, 238);
+}
+.login-register {
+  margin: 2rem 1rem 0 1rem;
+  font-size: 1rem;
+}
+.login-register-link {
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: rgb(105, 105, 105);
+  font-weight: 700;
+}
+.input-icon-container {
+  position: relative;
+  margin-bottom: 1rem; /* Khoảng cách giữa các ô input */
+}
+
+.icon {
+  position: absolute;
+  right: 10px; /* Khoảng cách từ bên trái */
+  top: 50%; /* Giữa chiều cao */
+  transform: translateY(-50%); /* Giữa theo chiều dọc */
+  color: #888; /* Màu sắc của biểu tượng */
+}
+.msgLogin {
+  visibility: visible !important;
+  font-size: 16px;
+  color: red;
+  text-align: center;
+  padding-left: 2rem;
+}

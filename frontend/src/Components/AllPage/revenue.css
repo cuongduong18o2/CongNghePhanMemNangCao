@@ -1,0 +1,97 @@
+/* Style cho container chính */
+.revenue-management-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-right: 180px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Style cho tiêu đề */
+.revenue-management-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Style cho vai trò người dùng */
+.revenue-management-role {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #555;
+}
+
+/* Style cho bảng */
+.revenue-management-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.revenue-management-table th,
+.revenue-management-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.revenue-management-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Style cho hàng trong bảng */
+.revenue-management-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style cho nút */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Style cho form chỉnh sửa doanh thu */
+.edit-revenue-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style cho input */
+.edit-revenue-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-revenue-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edit-revenue-form button {
+  background-color: #007bff;
+}
+
+.edit-revenue-form button:hover {
+  background-color: #0056b3;
+}
